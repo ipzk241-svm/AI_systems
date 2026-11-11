@@ -1,0 +1,82 @@
+{
+  "en": {
+    "ui": {
+      "documentTitle": "Recipe from Your Ingredients — Local Model",
+      "language": "Language",
+      "title": "What can I cook with these ingredients?",
+      "lead": "List the ingredients you have at home, and the local model will suggest one dish with a step-by-step recipe.",
+      "ingredients": "Ingredients",
+      "ingredientsPlaceholder": "For example: chicken breast, rice, carrot, onion, garlic, soy sauce",
+      "mealType": "Meal type",
+      "cookingTime": "Cooking time",
+      "generate": "Suggest a recipe",
+      "resultTitle": "Your recipe"
+    },
+    "options": {
+      "meals": [
+        { "value": "any", "label": "Any meal", "prompt": "any type of meal" },
+        { "value": "breakfast", "label": "Breakfast", "prompt": "breakfast" },
+        { "value": "lunch", "label": "Lunch", "prompt": "lunch" },
+        { "value": "dinner", "label": "Dinner", "prompt": "dinner" },
+        { "value": "snack", "label": "Snack", "prompt": "a snack" }
+      ],
+      "times": [
+        { "value": "20", "label": "Up to 20 minutes", "prompt": "within about 20 minutes" },
+        { "value": "40", "label": "Up to 40 minutes", "prompt": "within about 40 minutes" },
+        { "value": "any", "label": "No limit", "prompt": "with no time limit" }
+      ]
+    },
+    "prompt": {
+      "template": "You are a cooking assistant. Suggest one {meal} that can be prepared {time}.\nUse only the listed ingredients. Do not invent missing ingredients. If the ingredients are insufficient, explain this honestly and suggest the simplest possible option using only what is available.\nReply in English and use this format:\nDish name\nIngredients used\nCooking time\nStep-by-step recipe\nTip\n\nUSER INGREDIENTS:\n{ingredients}"
+    },
+    "messages": {
+      "noIngredients": "Please enter at least one ingredient.",
+      "generating": "The model is generating a recipe...",
+      "httpError": "The server returned HTTP {status}. Make sure model {model} is downloaded.",
+      "emptyResponse": "The model returned no text. Try again or restart Ollama.",
+      "done": "Done.",
+      "errorPrefix": "Error",
+      "ollamaHint": "Ollama must be running at http://localhost:11434."
+    }
+  },
+  "uk": {
+    "ui": {
+      "documentTitle": "Страва з продуктів — локальна модель",
+      "language": "Мова",
+      "title": "Що приготувати з продуктів?",
+      "lead": "Вкажіть продукти, які є вдома, — локальна модель запропонує одну страву та покроковий рецепт.",
+      "ingredients": "Продукти",
+      "ingredientsPlaceholder": "Наприклад: куряче філе, рис, морква, цибуля, часник, соєвий соус",
+      "mealType": "Тип страви",
+      "cookingTime": "Час приготування",
+      "generate": "Запропонувати страву",
+      "resultTitle": "Ваш рецепт"
+    },
+    "options": {
+      "meals": [
+        { "value": "any", "label": "Будь-яка", "prompt": "будь-яку страву" },
+        { "value": "breakfast", "label": "Сніданок", "prompt": "страву для сніданку" },
+        { "value": "lunch", "label": "Обід", "prompt": "страву для обіду" },
+        { "value": "dinner", "label": "Вечеря", "prompt": "страву для вечері" },
+        { "value": "snack", "label": "Перекус", "prompt": "перекус" }
+      ],
+      "times": [
+        { "value": "20", "label": "До 20 хвилин", "prompt": "приблизно за 20 хвилин" },
+        { "value": "40", "label": "До 40 хвилин", "prompt": "приблизно за 40 хвилин" },
+        { "value": "any", "label": "Без обмежень", "prompt": "без обмежень у часі" }
+      ]
+    },
+    "prompt": {
+      "template": "Ти кулінарний помічник. Запропонуй {meal}. Її можна приготувати {time}.\nВикористовуй лише перелічені продукти. Не вигадуй відсутні інгредієнти. Якщо продуктів недостатньо, чесно поясни це і запропонуй найпростіший можливий варіант лише з наявного.\nВідповідай українською та у форматі:\nНазва страви\nВикористані продукти\nЧас приготування\nПокроковий рецепт\nПорада\n\nПРОДУКТИ КОРИСТУВАЧА:\n{ingredients}"
+    },
+    "messages": {
+      "noIngredients": "Вкажіть хоча б один продукт.",
+      "generating": "Модель генерує рецепт...",
+      "httpError": "Сервер повернув HTTP {status}. Перевірте, що модель {model} завантажена.",
+      "emptyResponse": "Модель не повернула текст. Спробуйте ще раз або перезапустіть Ollama.",
+      "done": "Готово.",
+      "errorPrefix": "Помилка",
+      "ollamaHint": "Ollama має працювати на http://localhost:11434."
+    }
+  }
+}

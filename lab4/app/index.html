@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe from Your Ingredients — Local Model</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="language-control">
+      <label for="language" id="language-label">Language</label>
+      <select id="language" aria-labelledby="language-label">
+        <option value="en">English</option>
+        <option value="uk">Українська</option>
+      </select>
+    </div>
+
+    <h1 id="page-title">What can I cook with these ingredients?</h1>
+    <p class="lead" id="page-lead">List the ingredients you have at home, and the local model will suggest one dish with a step-by-step recipe.</p>
+
+    <label for="ingredients" id="ingredients-label">Ingredients</label>
+    <textarea id="ingredients" rows="9" placeholder="For example: chicken breast, rice, carrot, onion, garlic, soy sauce"></textarea>
+
+    <div class="options">
+      <label id="meal-type-label">Meal type
+        <select id="mealType"></select>
+      </label>
+      <label id="time-label">Cooking time
+        <select id="time"></select>
+      </label>
+    </div>
+
+    <button id="generate" type="button">Suggest a recipe</button>
+    <p id="status" role="status" aria-live="polite"></p>
+    <section id="result" aria-live="polite" hidden>
+      <h2 id="result-title">Your recipe</h2>
+      <pre id="output"></pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
